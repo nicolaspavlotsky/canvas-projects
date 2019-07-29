@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Starfield</title>
+		<style>
+			*{margin: 0; padding: 0; box-sizing: border-box;}
+			canvas{display: block;}
+			body{overflow: hidden;}
+		</style>
+	</head>
+<body>
+
+<canvas></canvas>
+
+<script>
+	function randomInt(min, max){
+		return Math.floor(Math.random()*(max-min+1)+min);
+	}
+
+	function randomScreenPoints(){
+		var x = randomInt(0, width),
+			y = randomInt(0, height);
+
+		return {'x': x, 'y': y};
+	}
+
+	var canvas = document.querySelector('canvas'),
+		ctx = canvas.getContext('2d'),
+		width = window.innerWidth,
+		height = window.innerHeight;
+
+	canvas.width = width;
+	canvas.height = height;
+
+	// Llenar el fondo con un azul oscuro
+	ctx.fillStyle = '#0b0b11';
+	ctx.fillRect(0, 0, width, height);
+
+	// Pasan 3 loops, el primero llena con puntos de varios colores con muy baja opacidad,
+	// el segundo llena con puntos negros con opacidad variable, y el tercero llena
+	// con puntos blancos de muy opacidad reducida.
+	for(var i = 0; i < 100000; i++){
+		var points = randomScreenPoints(),
+			opacity = Math.random() / 7;
+
+		ctx.fillStyle = 'hsla('+ i +', 100%, 50%, '+ opacity +')';
+		ctx.fillRect(points.x, points.y, Math.random(), Math.random());
+	}
+
+	for(var i = 0; i < 20000; i++){
+		var points = randomScreenPoints(),
+			opacity = Math.random() / 3;
+
+		ctx.fillStyle = 'hsla(0, 100%, 0%, '+ opacity +')';
+		ctx.fillRect(points.x, points.y, Math.random() * 3, Math.random() * 3)
+	}
+
+	for(var i = 0; i < 80000; i++){
+		var points = randomScreenPoints(),
+			opacity = Math.random() * .8;
+
+		ctx.fillStyle = 'hsla(0, 100%, 100%, '+ opacity +')';
+		ctx.fillRect(points.x, points.y, Math.random(), Math.random());
+	}
+</script>
+</body>
+</html>
