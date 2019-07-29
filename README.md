@@ -1,4 +1,4 @@
 # starfield
 Canvas starfield generator
 
-Demo: [Starfield](https://www.nicolaspavlotsky/github/demos/starfield)
+Demo: [Starfield](https://www.nicolaspavlotsky.com/github/demos/starfield)
