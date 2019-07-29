@@ -1,4 +1,5 @@
-# starfield
-Canvas starfield generator
+# Canvas Projects
+These are a list of canvas projects I made using HTML5 Canvas element and vanilla Javascript.
 
-Demo: [Starfield](https://www.nicolaspavlotsky.com/github/demos/starfield)
+
+* Starfield - [Demo](https://www.nicolaspavlotsky.com/github/demos/starfield/)
