@@ -1,0 +1,168 @@
+*{ padding: 0; margin: 0; outline: 0;}
+body{ overflow: hidden; font-family: 'Open Sans', sans-serif; font-size: 14px;}
+
+.gui{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	background: #fff;
+	width: 400px;
+	height: auto;
+	padding: 20px;
+}
+
+.title{
+	font-size: 32px;
+	font-weight: bold;
+	color: #6e09c1;
+	margin-bottom: 20px;
+}
+
+.commands{
+	background: #f1f1f1;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.commands p{
+	font-size: 18px;
+	font-size: bold;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+ul li{
+	display: block;
+	list-style: none;
+	font-size: 12px;
+	padding-left: 10px;
+	color: #777;
+}
+
+.letter{
+	margin: 3px;
+	background: #aaa;
+	color: #fff;
+	vertical-align: -1px;
+	display: inline-block;
+	width: 20px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+input{
+	text-transform: uppercase;
+	background: none;
+	border: 2px solid #000;
+	padding: 5px;
+	font-family: inherit;
+	box-sizing: border-box;
+	width: calc(100% - 10px);
+	margin-bottom: 10px;
+}
+
+.input-title{
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+
+.col-1{
+	width: 48%;
+	margin-right: 2%;
+	float: left;
+}
+
+.col-2{
+	width: 48%;
+	margin-left: 2%;
+	float: left;
+}
+
+button{
+	width: 100%;
+	background: #6e09c1;
+	cursor: pointer;
+	color: #fff;
+	font-family: inherit;
+	border: none;
+	padding: 4px 0;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.commands > span{
+	font-size: 12px;
+	display: inline-block;
+	color: #444;
+	margin-left: 13px;
+}
+
+.mb{
+	margin-top: 10px;
+}
+
+.checkbox{
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #222;
+	position: relative;
+	margin-left: 6px;
+	cursor: pointer;
+	vertical-align: -4px;
+}
+
+.check-label{
+	display: inline-block;
+	cursor: pointer;
+}
+
+.checkbox span:after{
+	width: 7px;
+	height: 3px;
+	background: #fff;
+	transform: rotate(45deg);
+	content: '';
+	top: 11px;
+	left: 3px;
+	display: block;
+	position: absolute;
+}
+
+.checkbox span:before{
+	width: 10px;
+	height: 3px;
+	top: 8px;
+	left: 7px;
+	background: #fff;
+	content: '';
+	display: block;
+	position: absolute;
+	transform: rotate(-45deg);
+}
+
+.false span:before, .false span:after{
+	opacity: 0;
+}
+
+.i-seed{
+	width: calc(70% - 10px);
+	float: left;
+}
+
+.random{
+	width: 30%;
+	float: right;
+	background: #6e09c1;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	padding: 6px 0;
+}
+
+.clear{
+	clear: both;
+}
