@@ -4,3 +4,4 @@ These are a list of canvas projects I made using HTML5 Canvas element and vanill
 I'll be adding more when I have some free time.
 
 * Starfield - [Demo](https://www.nicolaspavlotsky.com/github/demos/starfield/)
+* Walkers - [Demo](https://www.nicolaspavlotsky.com/github/demos/walkers/)
